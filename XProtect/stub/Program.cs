@@ -339,7 +339,7 @@ public class Form1 : Form
                 {
                     if (File.Exists(Path.Combine(txtLocation.Text, file.name)))
                     {
-                        DialogResult dialogResult = MessageBox.Show(string.Format("{0} already exists. Do you wish to overwrite ?", file.name), "Information", MessageBoxButtons.YesNo);
+                        DialogResult dialogResult = MessageBox.Show(string.Format("{0} already exists. Do you wish to overwrite?", file.name), "Information", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
                         {
                             Log(string.Format("Extracting {0} ", file.name));
